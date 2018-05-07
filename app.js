@@ -6,7 +6,6 @@ import cors from 'koa2-cors'
 import koaBody from 'koa-body'
 import util from 'util'
 import { database } from './mongodb'
-import config from './mongodb/config'
 import { saveUser, fetchUser, deleUser } from './mongodb/controlers/user'
 
 // blog
@@ -39,7 +38,7 @@ router.post('/login',  login)
 
 //输出HTNL页面
 app.use(KoaStatic(path.join(__dirname, '.', 'dist')))
-// app.use(bodyParser())
+
 app
   .use(router.routes())
   .use(router.allowedMethods())

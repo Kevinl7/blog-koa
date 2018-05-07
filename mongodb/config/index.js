@@ -1,4 +1,4 @@
 export default{
-  dbPath: 'mongodb://localhost/abc',
+  dbPath: 'mongodb://127.0.0.1:27017/admin',
   secret: 'mygao666'
 }
