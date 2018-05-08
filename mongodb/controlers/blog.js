@@ -30,7 +30,7 @@ export const fetchArticle = async (ctx, next) => {
     .skip(parseInt(info.page) * parseInt(info.size))
     .limit(10)
     .sort({'_id':-1})
-  lists.length ? ctx.body = {success: true, data: lists, total: total}
+  lists.length >= 0 ? ctx.body = {success: true, data: lists, total: total}
     : ctx.body = {success: false}
 }
 
