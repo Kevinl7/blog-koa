@@ -37,7 +37,7 @@ export const fetchArticle = async (ctx, next) => {
 // 登陆
 export const login = async (ctx, next) => {
   const info = ctx.request.body
-  if (info.user === 'mygao666' && info.psw === 'qaz12345') {
+  if (info.user === 'mygaoxxx' && info.psw === 'xxx') {
     let userToken = {
       user: info.user
     }
